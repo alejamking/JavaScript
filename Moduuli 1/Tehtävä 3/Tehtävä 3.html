@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mod1/Teht3</title>
+</head>
+<body>
+<h1>Tehtävä 3</h1>
+<p id="target"></p>
+<script>
+'use strict';
+const num1 = parseInt(prompt('Give first number: '), 10)
+const num2 = parseInt(prompt('Give second number: '), 10)
+const num3 = parseInt(prompt('Give third number: '), 10)
+
+const sum = num1 + num2 + num3
+const product = num1 * num2 * num3
+const average = sum / 3
+
+document.querySelector("#target").innerHTML = `Sum: ${sum} <br> Product: ${product} <br> Average: ${average}`
+</script>
+</body>
+</html>
