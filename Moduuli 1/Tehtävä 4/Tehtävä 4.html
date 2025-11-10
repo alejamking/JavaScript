@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mod1/Teht4</title>
+</head>
+<body>
+<h1>Tehtävä 3</h1>
+<div id="target"></div>
+
+  <script>
+    'use strict';
+    const name = prompt('What is your name?');
+
+    
+    const houseNumber = Math.floor(Math.random() * 4) + 1;
+    let house;
+
+    if (houseNumber === 1) {
+      house = 'Gryffindor';
+    } else if (houseNumber === 2) {
+      house = 'Slytherin';
+    } else if (houseNumber === 3) {
+      house = 'Hufflepuff';
+    } else {
+      house = 'Ravenclaw';
+    }
+
+    document.querySelector('#target').innerHTML = `${name}, you are ${house}.`;
+  </script>
+</body>
+</html>

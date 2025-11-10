@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mod1/Teht5</title>
+</head>
+<body>
+<h1>Tehtävä 5</h1>
+<p id="target"></p>
+<script>'use strict';
+
+const year = prompt('Enter a year:');
+
+if (year % 400 === 0) {
+    document.querySelector("#target").innerHTML = `${year} is a leap year.`
+} else if (year % 100 === 0) {
+    document.querySelector("#target").innerHTML = `${year} is not a leap year.`
+} else if (year % 4 === 0) {
+    document.querySelector("#target").innerHTML = `${year} is a leap year.`
+} else {
+    document.querySelector("#target").innerHTML = `${year} is not a leap year.`
+}
+
+</script>
+</body>
+</html>
