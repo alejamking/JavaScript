@@ -1,0 +1,175 @@
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body {
+font-family: Verdana;
+background-color: #edb7c7;
+min-height: 100vh;
+color: #333;
+}
+
+.screen {
+/* display: none; tää siihe piilotusjuttuu*/
+min-height: 100vh;
+padding: 20px;
+}
+
+.screen.active {
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.container {
+background: white;
+border-radius: 15px;
+padding: 40px;
+max-width: 90%;
+width: 100%;
+text-align: center;
+}
+
+h1 {
+color: #c24e4e;
+margin-bottom: 40px;
+text-align: center;
+font-size: 2.5em;
+}
+
+.story-text {
+background: #f8f9fa;
+padding: 20px;
+border-radius: 10px;
+margin-bottom: 30px;
+line-height: 1.6;
+text-align: center;
+}
+
+.story-text p {
+margin-bottom: 10px;
+text-align: center;
+}
+
+.form-group {
+margin-bottom: 20px;
+text-align: center;
+}
+
+label {
+display: block;
+margin-bottom: 8px;
+font-weight: 600;
+color: #c24e4e;
+}
+
+
+input[type="text"],
+select {
+width: 50%;
+padding: 12px;
+border: 2px solid #ddd;
+border-radius: 8px;
+font-size: 16px;
+}
+
+input[type="text"]:focus,
+select:focus {
+outline: none;
+border-color: #edb7c7;
+}
+
+.btn {
+padding: 12px 30px;
+border: none;
+border-radius: 8px;
+font-size: 16px;
+font-weight: 600;
+letter-spacing: 0.5px;
+}
+
+.btn-primary {
+background: #c24e4e;
+color: white;
+}
+
+.btn-primary:hover {
+background: #e89d9d;
+}
+
+#game-screen {
+display: block;
+padding: 20px;
+width: 90%;
+margin: 0 auto;
+}
+
+.player-stats {
+background: white;
+border-radius: 10px;
+padding: 20px;
+margin-bottom: 20px;
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+gap: 15px;
+}
+
+
+.stat {
+display: flex;
+flex-direction: column;
+}
+
+
+/*statsien otsikot*/
+.stat-label {
+font-size: 14px;
+color: #c24e4e;
+margin-bottom: 5px;
+}
+
+
+/*muuttuvat statsit*/
+.stat-label + span {
+font-size: 18px;
+font-weight: 700;
+color: #333;
+}
+
+/*valikko*/
+.menu-section {
+background: white;
+border-radius: 10px;
+padding: 30px;
+}
+
+/*otsikko available actions*/
+h2 {
+color: #c24e4e;
+margin-bottom: 30px;
+text-align: center;
+font-size: 35px;
+}
+
+.action-buttons {
+display: flex;
+flex-direction: column;
+}
+
+.btn-action {
+background: #edb7c7;
+color: #c24e4e;
+border: 2px solid #c24e4e;
+width: 50%;
+margin-bottom: 15px;
+padding: 15px;
+font-size: 18px;
+}
+
+.btn-action:hover {
+background: #e89d9d;
+color: white;
+}
+

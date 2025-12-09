@@ -1,0 +1,8 @@
+.my-list {
+  background-color: rgb(211, 62, 62);
+  color: #fff;
+}
+.my-list {
+    list-style-type: disc;
+    padding-left: 20px;
+}

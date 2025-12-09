@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Luggage game</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <div id="app">
+        <div id="start-screen" class="screen active">
+            <div class="container">
+                <h1>Airport inspector game</h1>
+                <div class="story-text">
+                    <p>Hey! You've just received an invitation to your dream job in Australia! The problem is… you don't have much money yet. Fortunately, you're working as a luggage inspector at the airport. By taking new positions in airports a little closer to Australia, you can slowly make your way toward your final destination.</p>
+                </div>
+
+                <form id="start-form">
+                    <div class="form-group">
+                        <label for="player-name">Enter your name:</label>
+                        <input type="text" id="player-name" required placeholder="Your name">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="starting-country">Choose your starting country:</label>
+                        <select id="starting-country" required>
+                            <option value="Finland">Finland</option>
+                            <option value="Sweden">Sweden</option>
+                            <option value="Norway">Norway</option>
+                            <option value="Denmark">Denmark</option>
+                        </select>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Start Game</button>
+
+                </form>
+            </div>
+        </div>
+        <!--pelaajan tiedot-->
+        <div id="game-screen" class="screen">
+            <div class="player-stats">
+                <div class="stat">
+                    <span class="stat-label">Name:</span>
+                    <span id="stat-name">-</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-label">Day:</span>
+                    <span id="stat-day">-</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-label">Balance:</span>
+                    <span id="stat-balance">-</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-label">Location:</span>
+                    <span id="stat-location">-</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-label">Penalties:</span>
+                    <span id="stat-penalties">-</span>
+                </div>
+            </div>
+            <!--valikko-->
+            <div id="main-menu" class="menu-section">
+                <h2>Available actions</h2>
+                <div id="next-destinations" class="destination-preview"></div>
+                <div class="action-buttons">
+                    <button id="btn-work" class="btn btn-action">Go to work</button>
+                    <button id="btn-fly" class="btn btn-action">Fly to next destination</button>
+                    <button id="btn-news" class="btn btn-action">Check current news</button>
+                    <button id="btn-quit" class="btn btn-action">Quit game</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
